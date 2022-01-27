@@ -1,0 +1,63 @@
+html,
+body {
+    height: 100%;
+}
+
+.wrap {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 1 auto;
+}
+
+.search-block {
+    height: 400px;
+    background-color: rgba(205, 78, 64, 0.15);
+    display: flex;
+    align-items: center
+}
+
+.result-block {
+    height: 400px;
+    display: flex;
+    align-items: center;
+    background-image: url("/public/img/4155601.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.no-search {
+    max-width: 790px;
+}
+
+.upload {
+    height: 400px;
+    display: flex;
+    align-items: center;
+    background-image: url("/public/img/2007.i602.002.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.upload a {
+    color: rgba(205, 78, 64);
+}
+
+a.page-link {
+    color: rgba(205, 78, 64);
+}
+.page-item.active .page-link {
+    background: rgba(205, 78, 64);
+    border-color: rgba(205, 78, 64);
+}
+
+
+.footer,
+.wrap-upload {
+    border-top: 1px solid rgba(205, 78, 64, 0.15);
+}
