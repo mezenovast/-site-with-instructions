@@ -18,7 +18,7 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-    <link rel="stylesheet" href="\public\css\style.css">
+    <link rel="stylesheet" href="\css\style.css">
 
 </head>
 <body>
