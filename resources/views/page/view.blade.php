@@ -8,7 +8,7 @@
 </head>
 <body>
     <div class="container-fluid">
-        <iframe src="/public/file/{{$instruction['file']}}" type="application/pdf" width="100%" height="1000px"></iframe>
+        <iframe src="/file/{{$instruction['file']}}" type="application/pdf" width="100%" height="1000px"></iframe>
     </div>
 </body>
 </html>
