@@ -16,10 +16,12 @@ class PageController extends Controller
 
         $instructions = Instruction::orderBy('created_at')
         ->where('status', 1)
-        ->where('title', 'LIKE', '%'.$search_str.'%')
-        ->orWhere('model', 'LIKE', '%'.$search_str.'%')
+        ->where(function($search_str) {
+            $search_str->where('title', 'LIKE', '%'.$search_str.'%')
+                    ->orWhere('model', 'LIKE', '%'.$search_str.'%');
+        })
         ->paginate(9);
-        
+
         $categories = Category::all();
 
         return view('page.index', compact(['instructions','categories']));
