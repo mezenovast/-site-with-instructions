@@ -39,7 +39,7 @@ Route::get('/download/{file}', [PageController::class, 'download']);
 
 Route::get('/view/{id}', [PageController::class, 'show']);
 
-Route::get('/complaint/{id}', [ComplaintController::class, 'create']);
+Route::get('/complaint/{id}', [ComplaintController::class, 'create'])->middleware('auth');
 
 Route::resource('upload', UploadController::class)->middleware('auth');
 
