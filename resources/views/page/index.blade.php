@@ -12,7 +12,7 @@
         <p class="text-danger">Потеряли инструкцию? Не беда, мы создали этот сервис специально для вас.</p>
       </div>
       <div class="col-sm-6">
-        <img src="/public/img/4436224.png" class="img-fluid" alt="instruct">
+        <img src="/img/4436224.png" class="img-fluid" alt="instruct">
       </div>
     </div>
   </div>
