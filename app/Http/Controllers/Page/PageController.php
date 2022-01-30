@@ -14,10 +14,9 @@ class PageController extends Controller
     {
         $search_str = $request->search_field;
 
-        $instructions = Instruction::orderBy('created_at')
+        $instructions = Instruction::orderBy('created_at', 'DESC')
         ->where('status', 1)
-        ->where('title', 'LIKE', '%'.$search_str.'%')
-        ->orWhere('model', 'LIKE', '%'.$search_str.'%')
+        ->where([['title', 'LIKE', '%'.$search_str.'%'], ['model', 'LIKE', '%'.$search_str.'%']])
         ->paginate(9);
 
         $categories = Category::all();
